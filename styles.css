@@ -37,6 +37,38 @@ div {
    position: relative;
    height: 38.5%;
    width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   flex-wrap: nowrap;
+}
+
+section.img{
+   height: 50%;
+   width: 10%;
+   border-radius: 50%;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+}
+
+section.img img{
+   position: relative;
+   height: 100%;
+   width: 100%;
+}
+
+section.desc {
+   height: 100%;
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   align-items: center;
+   justify-content: center;
 }
 
 footer {
