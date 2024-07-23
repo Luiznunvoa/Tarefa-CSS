@@ -1,6 +1,7 @@
 body {
    margin: 0;
    font-family: Arial;
+   font-size: 1vh;
 }
 
 main {
@@ -47,6 +48,7 @@ div {
 section.img{
    height: 50%;
    width: 10%;
+   min-width: 150px;
    border-radius: 50%;
    overflow: hidden;
    display: flex;
@@ -75,8 +77,8 @@ section.desc {
 
 section.lst {
    position: relative;
-   height: 100%;
-   width: 45%;
+   height: 40vh;
+   width: 200vh; 
    display: flex;
    flex-direction: column;
    flex-wrap: nowrap;
@@ -124,7 +126,7 @@ section.lst section section section {
    justify-content: space-around;
 }
 
-span {
+section.lst section section section span {
    height: 100%;
    width: 25%;
    display: flex;
@@ -159,6 +161,7 @@ footer section{
 footer section section {
    height: 50%;
    width: 9.5%;
+   min-width: 20px;
    border-radius: 50%;
    margin-left: 5%;
    overflow: hidden;
@@ -168,4 +171,22 @@ footer section section {
 footer section section img {
    height: 100%;
    width: 100%;
+}
+
+footer section span{
+   height: 50%;
+   width: 50%;
+   border-radius: 5%;
+   display: flex;
+   background-color: #e4e4e4;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   justify-content: center;
+   align-items: center;
+
+}
+
+footer section span:hover{
+   background-color: #7e7e7e;
+
 }
