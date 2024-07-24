@@ -34,15 +34,15 @@ header section {
    align-content: space-around;
 }
 
-div.midpage {
+section.midpage {
    position: relative;
    height: 38.5%;
    width: 100%;
    display: flex;
-   flex-direction: row;
+   flex-direction: column-reverse;
    justify-content: space-around;
    align-items: center;
-   flex-wrap: nowrap;
+   flex-wrap: wrap;
 }
 
 section.img{
@@ -76,50 +76,33 @@ section.desc {
 
 section.lst {
    position: relative;
-   height: 100%;
-   width: 50%; 
+   height: 95%;
+   width: 50%;
    display: flex;
    flex-direction: column;
-   flex-wrap: nowrap;
+   flex-wrap: wrap;
    align-items: center;
    justify-content: center;
 }
-section.lst section {
-   position: relative;
-   height: 70%;
-   width: 100%;
-   border-radius: 5%;
-   display: flex;
-   flex-direction: row;
-   flex-wrap: nowrap;
-   align-content: center;
-   align-items: center;
-   justify-content: space-around;
-}
 
-section.lst section section {
-   height: 70%;
+section.lst div {
+   height: 55%;
    width: 15%;
    background-color: #DFDFDF;
    display: flex;
    flex-direction: column;
-   justify-content: flex-start;
    align-content: center;
    align-items: center;
-   box-shadow: 0 6vh 1vh -5vh rgba(0,0,0,0.3);
+   box-shadow: 0 6vh 1vh -5vh rgba(0, 0, 0, 0.3);
+   justify-content: space-evenly;
 }
 
-section.lst section section:hover {
+section.lst div img {
    height: 80%;
-   width: 25%;
-   transition: 0.5s;
-   
-}
-
-section.lst section section img{
-   height: 70%;
    width: 100%;
 }
+
+
 
 section.lst section section section {
    height: 30%;
@@ -203,7 +186,7 @@ footer section span:hover{
       width: 150px;
    }
 
-   div.midpage{
+   section.midpage{
       display: flex;
       flex-direction: column;
       align-items: center;
