@@ -114,16 +114,33 @@ section.lst {
 
 section.lst div {
    height: 55%;
-   width: 15%;
-   background-color: #DFDFDF;
-   display: flex;
-   flex-direction: column;
-   align-content: center;
-   align-items: center;
-   box-shadow: 0 6vh 1vh -5vh rgba(0, 0, 0, 0.3);
-   justify-content: space-evenly;
-   transition: 0.5s;
+    width: 15%;
+    background-color: #DFDFDF;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    align-items: center;
+    box-shadow: 0 6vh 1vh -5vh rgba(0, 0, 0, 0.3);
+    justify-content: space-evenly;
+    transition: 0.5s;
+    flex-wrap: wrap;
+
 }
+
+section.lst div span{
+   position: relative;
+   height: 20%;
+   width: 15%;
+   right: 0;
+   top: 0;
+   transform: translate(-50%, 0%);
+   background-color: #7e7e7e;
+   color: #C4C4C4;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
 
 section.lst div:hover {
    height: 65%;
