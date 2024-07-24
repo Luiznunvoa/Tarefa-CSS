@@ -22,7 +22,7 @@ header {
    display: inline-flex;
    justify-content: space-between;
    background-color: #C4C4C4;
-   box-shadow: 0px 16px 24px -13px rgba(0,0,0,1);
+   box-shadow: 0 6vh 1vh -5vh rgba(0,0,0,0.3);
 }
 
 header section {
@@ -55,7 +55,7 @@ section.img{
    flex-direction: column;
    align-items: center;
    justify-content: space-around;
-   box-shadow: 0px 15px 24px -13px rgba(0,0,0,1);
+   box-shadow: 0 6vh 1vh -5vh rgba(0,0,0,0.3);
 }
 
 section.img img{
@@ -106,7 +106,7 @@ section.lst section section {
    justify-content: flex-start;
    align-content: center;
    align-items: center;
-   box-shadow: 0px 15px 24px -13px rgba(0,0,0,1);
+   box-shadow: 0 6vh 1vh -5vh rgba(0,0,0,0.3);
 }
 
 section.lst section section img{
@@ -143,7 +143,7 @@ footer {
    width: 100%;
    display: flex;
    background-color: #C4C4C4;
-   box-shadow: 0px -16px 24px -13px rgba(0, 0, 0, 1);
+   box-shadow: 0 -7vh 1vh -6vh rgba(0,0,0,0.3);
    flex-direction: row;
    flex-wrap: nowrap;
    justify-content: space-between;
