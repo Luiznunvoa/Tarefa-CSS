@@ -3,6 +3,7 @@ body {
    font-family: Arial;
    font-size: 1vh;
 }
+/*O a tag '<main>' esta contendo a página como um todo*/
 
 main {
    position: absolute;
@@ -14,6 +15,8 @@ main {
    align-items: center;
    background-color: #F3F3F3;
 }
+
+/*Estilizaçao do cabeçalho*/
 
 header {
    position: relative;
@@ -33,6 +36,8 @@ header section {
    text-align: center;
    align-content: space-around;
 }
+
+/*Estilização do meio da página*/
 
 section.upper {
    position: relative;
@@ -55,6 +60,8 @@ section.bottom {
    flex-wrap: wrap;
    justify-content: space-evenly;
 }
+
+/*Estilização da sessão superior do meio da página*/
 
 div.img {
    height: 20vh;
@@ -92,6 +99,8 @@ section.desc {
    justify-content: center;
 }
 
+/*Estilização da sessão inferior do meio da página*/
+
 section.lst {
    position: relative;
    height: 95%;
@@ -126,6 +135,8 @@ section.lst div img {
    height: 80%;
    width: 100%;
 }
+
+/*Estilização do rodapé*/
 
 footer {
    position: relative;
@@ -179,6 +190,8 @@ footer section span:hover{
    background-color: #7e7e7e;
 
 }
+
+/*Estilização para diferentes tamanhos de tela*/
 
 @media only screen and (max-width: 1035px) {
 
