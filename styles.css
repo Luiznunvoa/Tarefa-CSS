@@ -34,7 +34,7 @@ header section {
    align-content: space-around;
 }
 
-section.midpage {
+section.upper {
    position: relative;
    height: 38.5%;
    width: 100%;
@@ -45,7 +45,18 @@ section.midpage {
    flex-wrap: wrap;
 }
 
-section.img{
+section.bottom {
+   position: relative;
+   height: 38.5%;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+}
+
+div.img {
    height: 20vh;
    width: 20vh;
    border-radius: 50%;
@@ -55,9 +66,16 @@ section.img{
    align-items: center;
    justify-content: space-around;
    box-shadow: 0 6vh 1vh -5vh rgba(0,0,0,0.3);
+   transition: 0.5s;
 }
 
-section.img img{
+div.img:hover {
+   height: 22vh;
+   width: 22vh;
+   transition: 0.5s;
+}
+
+div.img img {
    position: relative;
    height: 100%;
    width: 100%;
@@ -95,6 +113,13 @@ section.lst div {
    align-items: center;
    box-shadow: 0 6vh 1vh -5vh rgba(0, 0, 0, 0.3);
    justify-content: space-evenly;
+   transition: 0.5s;
+}
+
+section.lst div:hover {
+   height: 65%;
+   width: 25%;
+   transition: 0.5s;
 }
 
 section.lst div img {
@@ -148,7 +173,7 @@ footer section{
    justify-content: center;
 }
 
-footer section section {
+footer section div {
    height: 50%;
    width: 9.5%;
    border-radius: 50%;
@@ -157,7 +182,7 @@ footer section section {
    display: flex;
 }
 
-footer section section img {
+footer section div img {
    height: 100%;
    width: 100%;
 }
@@ -180,24 +205,40 @@ footer section span:hover{
 
 }
 
-@media only screen and (max-width: 821px) {
-   section.img{
-      height: 200px;
-      width: 150px;
-   }
+@media only screen and (max-width: 1035px) {
 
-   section.midpage{
+   section.bottom{
       display: flex;
       flex-direction: column;
       align-items: center;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+   }
+
+   section.upper{
+      display: flex;
+      flex-direction: column;
       justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
    }
 
    section.lst {
+      position: relative;
+      height: 40%;
       width: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+  }
+
+   section.desc {
+      text-align: center;
    }
 
-   footer section section {
+   footer section div {
       width: 30px;
       height: 30px;
    }
@@ -214,4 +255,29 @@ footer section span:hover{
    footer section {
       width: 40%;
    }
+
+   footer {
+      position: relative;
+      height: 9.4%;
+      width: 100%;
+      display: flex;
+      background-color: #C4C4C4;
+      box-shadow: 0 -7vh 1vh -6vh rgba(0, 0, 0, 0.3);
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   section.desc {
+      position: relative;
+      height: 50%;
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: center;
+  }
+
 }
