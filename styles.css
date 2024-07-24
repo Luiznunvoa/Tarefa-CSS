@@ -34,7 +34,7 @@ header section {
    align-content: space-around;
 }
 
-div {
+div.midpage {
    position: relative;
    height: 38.5%;
    width: 100%;
@@ -48,7 +48,6 @@ div {
 section.img{
    height: 50%;
    width: 10%;
-   min-width: 150px;
    border-radius: 50%;
    overflow: hidden;
    display: flex;
@@ -77,8 +76,8 @@ section.desc {
 
 section.lst {
    position: relative;
-   height: 40vh;
-   width: 200vh; 
+   height: 100%;
+   width: 50%; 
    display: flex;
    flex-direction: column;
    flex-wrap: nowrap;
@@ -97,6 +96,7 @@ section.lst section {
    align-items: center;
    justify-content: space-around;
 }
+
 section.lst section section {
    height: 70%;
    width: 15%;
@@ -107,6 +107,13 @@ section.lst section section {
    align-content: center;
    align-items: center;
    box-shadow: 0 6vh 1vh -5vh rgba(0,0,0,0.3);
+}
+
+section.lst section section:hover {
+   height: 80%;
+   width: 25%;
+   transition: 0.5s;
+   
 }
 
 section.lst section section img{
@@ -188,5 +195,23 @@ footer section span{
 
 footer section span:hover{
    background-color: #7e7e7e;
+
+}
+
+@media only screen and (max-width: 600px) {
+   section.img {
+      width: 150px;
+   }
+
+   div.midpage{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+
+   section.lst {
+      width: 100%;
+   }
 
 }
