@@ -46,8 +46,8 @@ div.midpage {
 }
 
 section.img{
-   height: 50%;
-   width: 10%;
+   height: 20vh;
+   width: 20vh;
    border-radius: 50%;
    overflow: hidden;
    display: flex;
@@ -168,7 +168,6 @@ footer section{
 footer section section {
    height: 50%;
    width: 9.5%;
-   min-width: 20px;
    border-radius: 50%;
    margin-left: 5%;
    overflow: hidden;
@@ -198,8 +197,9 @@ footer section span:hover{
 
 }
 
-@media only screen and (max-width: 600px) {
-   section.img {
+@media only screen and (max-width: 821px) {
+   section.img{
+      height: 200px;
       width: 150px;
    }
 
@@ -214,4 +214,21 @@ footer section span:hover{
       width: 100%;
    }
 
+   footer section section {
+      width: 30px;
+      height: 30px;
+   }
+
+   section.desc {
+      width: 80%;
+      text-align: center;
+   }
+
+   footer section span {
+      width: 125px;
+   }
+
+   footer section {
+      width: 40%;
+   }
 }
